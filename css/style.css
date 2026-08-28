@@ -198,6 +198,7 @@ h1, h2, h3 { font-family: "Space Grotesk", "Inter", sans-serif; line-height: 1.1
     color: var(--accent); font-size: 13px; text-decoration: none;
 }
 .card-link:hover { color: var(--accent-dim); }
+.card-link.dead { color: #56637a; font-size: 12.5px; }
 .center-cta { text-align: center; margin-top: 36px; }
 
 /* Report log (findings) */
