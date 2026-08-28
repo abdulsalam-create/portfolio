@@ -1,596 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Abdulsalam Abdulsalam | Security Researcher & Fullstack Developer</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords" content="Abdulsalam Abdulsalam, security researcher, bug bounty, fullstack developer, Laravel, pentester, AR developer, Nigeria">
     <meta name="description" content="Security researcher and fullstack developer from Lagos, Nigeria. Validated bug bounty findings on HackerOne, Bugcrowd and Intigriti, web apps in Laravel and Node.js, AR with Unity and Vuforia, and AI function calling agents.">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f172a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='bold' fill='%232563eb' text-anchor='middle'%3EAA%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
+<body>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+    <!-- Nav -->
+    <header class="nav" id="nav">
+        <div class="wrap nav-inner">
+            <a class="logo" href="#home">AA<span>.</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a class="nav-cta" href="pdf.pdf" download="Abdulsalam-Abdulsalam-CV.pdf">Download CV</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
         </div>
-    </div>
-    <!-- Spinner End -->
+    </header>
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">AbdulPort</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
-            </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">Portfolio</h1>
-            </a>
-            <div class="navbar-nav me-auto py-0">
-                <a href="#testimonial" class="nav-item nav-link">Testimonials</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Abdulsalam Abdulsalam</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Security Researcher, Fullstack Web Developer, Backend Developer, AR Developer, AI Function Calling</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="pdf.pdf" download="Abdulsalam-Abdulsalam-CV.pdf" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
-                        <a href="https://github.com/abdulsalam-create" target="_blank" class="btn btn-outline-primary py-3 px-4">GitHub</a>
-                    </div>
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="wrap hero-grid">
+            <div class="hero-copy">
+                <p class="overline">Security Researcher · Fullstack Developer</p>
+                <h1>Abdulsalam Abdulsalam</h1>
+                <p class="hero-sub">I break web apps, build them, and teach LLMs how to use tools. Based in Lagos, Nigeria, working remotely.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="pdf.pdf" download="Abdulsalam-Abdulsalam-CV.pdf"><i class="bi bi-download"></i> Download CV</a>
+                    <a class="btn btn-ghost" href="https://github.com/abdulsalam-create" target="_blank"><i class="bi bi-github"></i> GitHub</a>
                 </div>
-                <div class="col-lg-6">
-                    <!-- <img class="img-fluid" src="img/profile.png" alt=""> -->
+                <p class="hero-note"><span class="dot"></span> Available for freelance and remote work</p>
+            </div>
+            <div class="terminal" aria-label="Summary of my work">
+                <div class="terminal-bar">
+                    <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+                    <span class="terminal-title">abdulsalam ~ profile</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="t-prompt">$</span> whoami</p>
+                    <p class="t-out">security researcher · fullstack developer</p>
+                    <p><span class="t-prompt">$</span> findings --accepted</p>
+                    <p class="t-out">HackerOne: stored XSS, business logic</p>
+                    <p class="t-out">Bugcrowd: response manipulation</p>
+                    <p class="t-out">Intigriti: response manipulation</p>
+                    <p><span class="t-prompt">$</span> building --now</p>
+                    <p class="t-out">AI function calling agents (Playwright, Groq)</p>
+                    <p><span class="t-prompt">$</span> status</p>
+                    <p class="t-out t-blink">open to work, remote <span class="caret">▊</span></p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
+    </section>
 
-    <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">4+</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">of experience across web development, security research and network operations</h3>
-                    </div>
-
-                    <p>I build web apps with PHP/Laravel, Node.js and JavaScript, and I test them for a living too.
-                    As an independent security researcher I have reported validated vulnerabilities on HackerOne,
-                    Bugcrowd and Intigriti, including stored XSS, business logic and response manipulation flaws.</p>
-
-                    <p>Before that I interned at Huawei Technologies and MTN Nigeria, working on network monitoring,
-                    incident response and operational documentation for enterprise telecom systems. I hold the
-                    Microsoft Azure AI Fundamentals (AI-900) certification.</p>
-
-                    <p>Recently I have been building AI function calling agents: an LLM driven scanner that finds
-                    client-side tags with a headless browser, a network ops assistant, and an OSINT recon agent.
-                    You can find all three on my GitHub.</p>
-
-                    <p>I also develop augmented reality experiences with Unity, C# and Vuforia, and I model in
-                    Blender when a project needs custom assets.</p>
-
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Validated bug bounty findings on three platforms</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Production admin dashboards for clients</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>AI function calling agents, open source</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On time project delivery</p>
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="wrap">
+            <p class="overline">About me</p>
+            <h2 class="h2">Developer with a security brain</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I build web apps with PHP/Laravel, Node.js and JavaScript, and I test them for a living too. As an independent security researcher I have reported validated vulnerabilities on HackerOne, Bugcrowd and Intigriti, including stored XSS, business logic and response manipulation flaws.</p>
+                    <p>Before that I interned at Huawei Technologies and MTN Nigeria, working on network monitoring, incident response and operational documentation for enterprise telecom systems. I hold the Microsoft Azure AI Fundamentals (AI-900) certification.</p>
+                    <p>Recently I have been building AI function calling agents: an LLM driven scanner that finds client-side tags with a headless browser, a network ops assistant, and an OSINT recon agent. I also develop augmented reality experiences with Unity, C# and Vuforia.</p>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
+                <div class="about-side">
+                    <div class="stats">
+                        <div class="stat"><h3>4+</h3><span>years experience</span></div>
+                        <div class="stat"><h3>20</h3><span>projects delivered</span></div>
+                        <div class="stat"><h3>3</h3><span>bounty platforms with accepted findings</span></div>
+                        <div class="stat"><h3>5</h3><span>happy clients</span></div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">5</h2>
-                    </div>
-                    <p class="mb-4">People I have worked with professionally who are satisfied with my work.</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">20</h2>
-                    </div>
-                    <p class="mb-0">Projects completed professionally and for clients since I started in 2022.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills &amp; Experience</h1>
-                    <p class="mb-4">Skills I have built up through client work, bug bounty hunting and constant learning.</p>
-                    <h3 class="mb-4">My Skills</h3>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">60%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">PHP</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Laravel</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">SQL</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Python</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Javascript</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Node.js</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Pentesting</h6>
-                                    <h6 class="font-weight-bold">60%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Burp Suite</h6>
-                                    <h6 class="font-weight-bold">70%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">AR Development</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Game Dev (Unity)</h6>
-                                    <h6 class="font-weight-bold">60%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
-                                href="#tab-1">Projects</button>
-                        </li>
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
-                                href="#tab-2">Security Findings</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>AI Client Tag Recon</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Headless browser scanner that extracts client-side tags and feature flags, driven by LLM function calling.</p>
-                                    <a href="https://github.com/abdulsalam-create/AI-client-tag-recon" target="_blank" class="btn btn-primary mb-1">View on GitHub</a>
-                                    <h6 class="mb-0">Python, Playwright, Groq</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Sysadmin Agent</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Network operations assistant that checks and restarts servers through tool calls.</p>
-                                    <a href="https://github.com/abdulsalam-create/sysadmin-agent" target="_blank" class="btn btn-primary mb-1">View on GitHub</a>
-                                    <h6 class="mb-0">Python, Groq, Qwen</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>OSINT Recon Agent</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Recon assistant that resolves domains, fetches HTTP headers and checks ports on request.</p>
-                                    <a href="https://github.com/abdulsalam-create/osint-recon-agent" target="_blank" class="btn btn-primary mb-1">View on GitHub</a>
-                                    <h6 class="mb-0">Python, Groq, Qwen</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Carter's Portfolio Website</h5>
-                                    <hr class="text-primary my-2">
-                                    <a href="https://carterdesignz.com" target="_blank" class="btn btn-primary mb-1">View Site</a>
-                                    <h6 class="mb-0">Created for Carternimations</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Ecommerce Platform</h5>
-                                    <hr class="text-primary my-2">
-                                    <a href="https://marktsync.net" target="_blank" class="btn btn-primary mb-1">View Site</a>
-                                    <h6 class="mb-0">Created for users within ABUAD</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Blog Website</h5>
-                                    <hr class="text-primary my-2">
-                                    <a href="https://disebuseri.com" target="_blank" class="btn btn-primary mb-1">View Site</a>
-                                    <h6 class="mb-0">Created for an entrepreneur</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Crypto Trading Site</h5>
-                                    <hr class="text-primary my-2">
-                                    <a href="https://bloxtrades.net/" target="_blank" class="btn btn-primary mb-1">View Site</a>
-                                    <h6 class="mb-0">Created for a crypto trader</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>More Work</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Ecommerce platform in Laravel, AR projects, games and more.</p>
-                                    <a href="https://github.com/abdulsalam-create?tab=repositories" target="_blank" class="btn btn-primary mb-1">Browse Repos</a>
-                                    <h6 class="mb-0">See everything on GitHub</h6>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="col-lg-6 text-lg-end" style="margin: 0 auto;">
-                                        <a class="btn btn-primary py-3 px-5" href="https://github.com/abdulsalam-create" target="_blank">View My GitHub Repository</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>HackerOne</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Stored XSS and business logic vulnerabilities, reported through responsible disclosure.</p>
-                                    <h6 class="mb-0">Accepted and fixed by the vendor</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Bugcrowd</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Response manipulation vulnerability.</p>
-                                    <h6 class="mb-0">Led to unauthorized developer tool access</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Intigriti</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Response manipulation flaw.</p>
-                                    <h6 class="mb-0">Allowed unauthorized subscription plan extension</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Certifications</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="mb-1">Microsoft Azure AI Fundamentals (AI-900), Sep 2024</p>
-                                    <p class="mb-1">Introduction to Cybersecurity, Cisco Networking Academy</p>
-                                    <p class="mb-1">B.Sc. Computer Science, Afe Babalola University, 2026. CGPA 4.08/5.0</p>
-                                    <h6 class="mb-0">Plus Udemy: ethical hacking bootcamp, inventory systems, JS algorithms</h6>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="about-imgs">
+                        <img src="img/about-1.jpg" alt="Project screenshot">
+                        <img src="img/about-2.jpg" alt="Project screenshot">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Expertise End -->
+    </section>
 
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Services</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="#contact">Hire Me</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Frontend Development</h4>
-                            <span>Responsive sites and admin dashboards with Bootstrap, JavaScript and Laravel Blade. Clean layouts that work on phones and desktops.</span>
-                        </div>
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+        <div class="wrap">
+            <p class="overline">Skills</p>
+            <h2 class="h2">What I work with</h2>
+            <div class="skill-groups">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="chips">
+                        <span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">PHP</span><span class="chip">C#</span><span class="chip">SQL</span><span class="chip">HTML/CSS</span>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Penetration Testing</h4>
-                            <span>Web application testing with Burp Suite, business logic testing and responsible disclosure. I have validated findings on HackerOne, Bugcrowd and Intigriti.</span>
-                        </div>
+                <div class="skill-group">
+                    <h3>Frameworks &amp; Tools</h3>
+                    <div class="chips">
+                        <span class="chip">Laravel</span><span class="chip">Node.js</span><span class="chip">Unity</span><span class="chip">Vuforia</span><span class="chip">Bootstrap</span><span class="chip">Git</span>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Backend Development</h4>
-                            <span>APIs and server-side logic with Laravel, Node.js and Python, plus database design in MySQL. Security code reviews included.</span>
-                        </div>
+                <div class="skill-group">
+                    <h3>Security</h3>
+                    <div class="chips">
+                        <span class="chip">Burp Suite</span><span class="chip">Web App Testing</span><span class="chip">Business Logic Testing</span><span class="chip">Vulnerability Assessment</span><span class="chip">Responsible Disclosure</span>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">AR Development</h4>
-                            <span>Augmented reality experiences with Unity, C# and Vuforia, plus WebXR prototypes and custom 3D assets in Blender.</span>
-                        </div>
+                <div class="skill-group">
+                    <h3>AI &amp; Cloud</h3>
+                    <div class="chips">
+                        <span class="chip">LLM Function Calling</span><span class="chip">Microsoft Azure</span><span class="chip">Azure AI (AI-900)</span><span class="chip">Playwright</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Other</h3>
+                    <div class="chips">
+                        <span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">Blender</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+    </section>
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonials</h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-left h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="wrap">
+            <p class="overline">Projects</p>
+            <h2 class="h2">Things I have built</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-tag">AI · Security</p>
+                        <h3>AI Client Tag Recon</h3>
+                        <p>Headless browser scanner that extracts client-side tags and feature flags, driven by LLM function calling.</p>
+                        <div class="card-meta">Python · Playwright · Groq</div>
+                    </div>
+                    <a class="card-link" href="https://github.com/abdulsalam-create/AI-client-tag-recon" target="_blank">View on GitHub <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-tag">AI · Ops</p>
+                        <h3>Sysadmin Agent</h3>
+                        <p>Network operations assistant that checks and restarts servers through tool calls.</p>
+                        <div class="card-meta">Python · Groq · Qwen</div>
+                    </div>
+                    <a class="card-link" href="https://github.com/abdulsalam-create/sysadmin-agent" target="_blank">View on GitHub <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-tag">AI · OSINT</p>
+                        <h3>OSINT Recon Agent</h3>
+                        <p>Recon assistant that resolves domains, fetches HTTP headers and checks ports on request.</p>
+                        <div class="card-meta">Python · Groq · Qwen</div>
+                    </div>
+                    <a class="card-link" href="https://github.com/abdulsalam-create/osint-recon-agent" target="_blank">View on GitHub <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-tag">Laravel</p>
+                        <h3>Ecommerce Platform</h3>
+                        <p>Marketplace platform built for students within ABUAD.</p>
+                        <div class="card-meta">Laravel · MySQL</div>
+                    </div>
+                    <a class="card-link" href="https://marktsync.net" target="_blank">View site <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-tag">Web</p>
+                        <h3>Carter's Portfolio Website</h3>
+                        <p>Portfolio site with custom admin dashboard, built for Carternimations.</p>
+                        <div class="card-meta">Laravel · JavaScript</div>
+                    </div>
+                    <a class="card-link" href="https://carterdesignz.com" target="_blank">View site <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-tag">Web</p>
+                        <h3>Blog Website</h3>
+                        <p>Personal blog platform built for an entrepreneur.</p>
+                        <div class="card-meta">Laravel · Bootstrap</div>
+                    </div>
+                    <a class="card-link" href="https://disebuseri.com" target="_blank">View site <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-tag">Web</p>
+                        <h3>Crypto Trading Site</h3>
+                        <p>Trading platform built for a crypto trader.</p>
+                        <div class="card-meta">Laravel · JavaScript</div>
+                    </div>
+                    <a class="card-link" href="https://bloxtrades.net/" target="_blank">View site <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="center-cta">
+                <a class="btn btn-ghost" href="https://github.com/abdulsalam-create?tab=repositories" target="_blank">Browse all repos <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security research -->
+    <section class="section section-alt" id="research">
+        <div class="wrap">
+            <p class="overline">Security research</p>
+            <h2 class="h2">Validated findings</h2>
+            <p class="section-sub">Reported through responsible disclosure. I hunt business logic, authorization and data integrity bugs.</p>
+            <div class="findings">
+                <div class="finding">
+                    <div class="finding-head">
+                        <h3>HackerOne</h3>
+                        <span class="badge badge-green">Accepted</span>
+                    </div>
+                    <p><strong>Stored XSS, business logic</strong></p>
+                    <p class="finding-impact">Reported and fixed by the vendor.</p>
+                </div>
+                <div class="finding">
+                    <div class="finding-head">
+                        <h3>Bugcrowd</h3>
+                        <span class="badge badge-green">Accepted</span>
+                    </div>
+                    <p><strong>Response manipulation</strong></p>
+                    <p class="finding-impact">Led to unauthorized developer tool access.</p>
+                </div>
+                <div class="finding">
+                    <div class="finding-head">
+                        <h3>Intigriti</h3>
+                        <span class="badge badge-green">Accepted</span>
+                    </div>
+                    <p><strong>Response manipulation</strong></p>
+                    <p class="finding-impact">Allowed unauthorized subscription plan extension.</p>
+                </div>
+            </div>
+            <div class="certs">
+                <h3 class="certs-title">Certifications</h3>
+                <ul class="certs-list">
+                    <li><span class="cert-year">2024</span> Microsoft Certified: Azure AI Fundamentals (AI-900)</li>
+                    <li><span class="cert-year">2026</span> B.Sc. Computer Science, Afe Babalola University · CGPA 4.08/5.0</li>
+                    <li><span class="cert-year">2023</span> Complete Ethical Hacking Bootcamp · Udemy</li>
+                    <li><span class="cert-year">2023</span> Build Complete Inventory Management System A-Z · Udemy</li>
+                    <li><span class="cert-year">2021</span> Legacy JavaScript Algorithms and Data Structures</li>
+                    <li><span class="cert-year">—</span> Introduction to Cybersecurity · Cisco Networking Academy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="wrap">
+            <p class="overline">Services</p>
+            <h2 class="h2">How I can help</h2>
+            <div class="cards">
+                <div class="card card-service">
+                    <div class="card-body">
+                        <i class="bi bi-laptop service-icon"></i>
+                        <h3>Frontend Development</h3>
+                        <p>Responsive sites and admin dashboards with Bootstrap, JavaScript and Laravel Blade. Clean layouts that work on phones and desktops.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
-                                    src="img/testimonial-1.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">I hired Abdulsalam to make a website for me. Despite some delays it was completed expertly without any hiccups on the operational aspect. The site was well put together despite the budget given to him and also him having to juggle classes and personal life.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Ebi Buseri</h5>
-                            <span>Student</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
-                                    src="img/testimonial-2.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">I hired him to build a portfolio site for me, and he delivered. I like his approach to the site design and the admin functionality.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Carternimations</h5>
-                            <span>3D Artist</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
-                                    src="img/testimonial-3.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">His creativity with AR technology is immensely good. Granted it could use some improvements in certain areas.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Adam Salami</h5>
-                            <span>Solution Architect</span>
-                        </div>
+                <div class="card card-service">
+                    <div class="card-body">
+                        <i class="bi bi-shield-check service-icon"></i>
+                        <h3>Penetration Testing</h3>
+                        <p>Web application testing with Burp Suite, business logic testing and responsible disclosure. I have validated findings on HackerOne, Bugcrowd and Intigriti.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-right h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                <div class="card card-service">
+                    <div class="card-body">
+                        <i class="bi bi-hdd-rack service-icon"></i>
+                        <h3>Backend Development</h3>
+                        <p>APIs and server-side logic with Laravel, Node.js and Python, plus database design in MySQL. Security code reviews included.</p>
+                    </div>
+                </div>
+                <div class="card card-service">
+                    <div class="card-body">
+                        <i class="bi bi-box service-icon"></i>
+                        <h3>AR Development</h3>
+                        <p>Augmented reality experiences with Unity, C# and Vuforia, plus WebXR prototypes and custom 3D assets in Blender.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+    </section>
 
-    <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp container" data-wow-delay="0.1s">
-                    <hr class="w-100">
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+234 903 790 0487</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">abdulsalamaabdulsalam18@gmail.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Find me online:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://github.com/abdulsalam-create" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/abdulsalam-abdulsalam-64496a266" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Testimonials -->
+    <section class="section section-alt" id="testimonials">
+        <div class="wrap">
+            <p class="overline">Testimonials</p>
+            <h2 class="h2">What clients say</h2>
+            <div class="cards">
+                <div class="card card-quote">
+                    <div class="card-body">
+                        <p class="quote">"I hired Abdulsalam to make a website for me. Despite some delays it was completed expertly without any hiccups on the operational aspect. The site was well put together despite the budget given to him and also him having to juggle classes and personal life."</p>
+                        <p class="quote-by">Ebi Buseri <span>Student</span></p>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="bg-white rounded border p-5 text-center">
-                        <h3 class="mb-3">Prefer email?</h3>
-                        <p class="mb-4">The fastest way to reach me is direct email. I usually reply within a day.</p>
-                        <a class="btn btn-primary py-3 px-5" href="mailto:abdulsalamaabdulsalam18@gmail.com">Email Me</a>
+                <div class="card card-quote">
+                    <div class="card-body">
+                        <p class="quote">"I hired him to build a portfolio site for me, and he delivered. I like his approach to the site design and the admin functionality."</p>
+                        <p class="quote-by">Carternimations <span>3D Artist</span></p>
+                    </div>
+                </div>
+                <div class="card card-quote">
+                    <div class="card-body">
+                        <p class="quote">"His creativity with AR technology is immensely good. Granted it could use some improvements in certain areas."</p>
+                        <p class="quote-by">Adam Salami <span>Solution Architect</span></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
+    </section>
 
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; 2026 <a class="border-bottom text-secondary" href="#">Abdulsalam Abdulsalam</a>, All Rights Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Template by <a class="text-secondary" href="https://htmlcodex.com">HTML Codex</a>
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="wrap contact-wrap">
+            <p class="overline">Contact</p>
+            <h2 class="h2">Let's work together</h2>
+            <p class="section-sub">The fastest way to reach me is email. I usually reply within a day.</p>
+            <div class="contact-card">
+                <a class="btn btn-primary btn-lg" href="mailto:abdulsalamabdulsalam204@gmail.com"><i class="bi bi-envelope"></i> abdulsalamabdulsalam204@gmail.com</a>
+                <div class="contact-links">
+                    <a href="tel:+2349037900487"><i class="bi bi-telephone"></i> +234 903 790 0487</a>
+                    <a href="https://github.com/abdulsalam-create" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/abdulsalam-abdulsalam-64496a266" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Copyright End -->
+    </section>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <p>© 2026 Abdulsalam Abdulsalam</p>
+            <p>Lagos, Nigeria</p>
+        </div>
+    </footer>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script>
+        var toggle = document.getElementById('navToggle');
+        var links = document.getElementById('navLinks');
+        toggle.addEventListener('click', function () {
+            links.classList.toggle('open');
+        });
+        links.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A') links.classList.remove('open');
+        });
+    </script>
 </body>
-
 </html>
