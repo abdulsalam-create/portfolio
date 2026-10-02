@@ -120,7 +120,7 @@
                 <div class="skill-group">
                     <h3>ai &amp; cloud</h3>
                     <div class="chips">
-                        <span class="chip">LLM Function Calling</span><span class="chip">Microsoft Azure</span><span class="chip">Azure AI (AI-900)</span><span class="chip">Playwright</span>
+                        <span class="chip">LLM Function Calling</span><span class="chip">Typed-Decision LLMs (Jev)</span><span class="chip">REST API Integration</span><span class="chip">Microsoft Azure</span><span class="chip">Azure AI (AI-900)</span><span class="chip">Playwright</span>
                     </div>
                 </div>
                 <div class="skill-group">
@@ -139,6 +139,36 @@
             <p class="overline">// projects</p>
             <h2 class="h2">Things I have built</h2>
             <div class="cards">
+                <div class="card">
+                    <div class="card-cover">
+                        <svg viewBox="0 0 320 150" role="img" aria-label="Jev Pipeline decision routing preview">
+                            <rect width="320" height="150" fill="#0d131c"/>
+                            <text x="16" y="24" font-family="monospace" font-size="10" fill="#34d399">$ jev · POST /v1/systemone</text>
+                            <rect x="14" y="34" width="292" height="50" rx="5" fill="#141c28"/>
+                            <text x="22" y="46" font-family="monospace" font-size="7.5" fill="#8b98a8">STAGE 1 · TRIAGE</text>
+                            <text x="22" y="61" font-family="monospace" font-size="8" fill="#e8edf3">route</text>
+                            <rect x="66" y="55" width="120" height="6" rx="2" fill="#1c2a3d"/><rect x="66" y="55" width="120" height="6" rx="2" fill="#60a5fa"/>
+                            <text x="192" y="61" font-family="monospace" font-size="8" fill="#60a5fa">billing 1.00</text>
+                            <text x="22" y="76" font-family="monospace" font-size="8" fill="#e8edf3">urgency</text>
+                            <rect x="66" y="70" width="120" height="6" rx="2" fill="#1c2a3d"/><rect x="66" y="70" width="90" height="6" rx="2" fill="#fbbf24"/>
+                            <text x="192" y="76" font-family="monospace" font-size="8" fill="#fbbf24">2.28 / 3</text>
+                            <text x="160" y="98" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b98a8">route = billing  ↓  code routes</text>
+                            <rect x="14" y="104" width="292" height="38" rx="5" fill="#141c28"/>
+                            <text x="22" y="116" font-family="monospace" font-size="7.5" fill="#8b98a8">STAGE 2 · BILLING DESK</text>
+                            <text x="22" y="132" font-family="monospace" font-size="8" fill="#34d399">double_charge</text>
+                            <text x="118" y="132" font-family="monospace" font-size="8" fill="#f87171">churn 0.98</text>
+                            <text x="196" y="132" font-family="monospace" font-size="8" fill="#e8edf3">needs_human ✓</text>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-tag">AI · DECISION ENGINE</p>
+                        <h3>Jev Pipeline</h3>
+                        <p>A multi-stage decision pipeline on TypeSafe's Jev model. One call triages a support ticket into typed decisions (route, urgency, needs-human), then the app routes in code to a team-specific second stage. Makes real, live API calls through a zero-dependency local backend that keeps the key server-side.</p>
+                        <div class="card-meta">Python · Jev (System One) · REST · no dependencies</div>
+                    </div>
+                    <a class="card-link" href="https://github.com/abdulsalam-create/jev-prism" target="_blank">view on github <i class="bi bi-arrow-right"></i></a>
+                </div>
+
                 <div class="card">
                     <div class="card-cover">
                         <svg viewBox="0 0 320 150" role="img" aria-label="Aurora Drift twilight scene preview">
