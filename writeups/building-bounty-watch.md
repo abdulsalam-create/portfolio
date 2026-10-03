@@ -46,10 +46,6 @@ All of that becomes an alert the moment it changes, instead of me stumbling onto
 
 Once you're watching a lot of programs the next problem is just "okay, which one do I actually spend tonight on." So every program gets a hunt score out of 100. It's deliberately a plain additive model, not some mystery black box. Freshness weighs the most, because recent scope is the least picked over, then how much new surface has shown up lately, then the raw attack surface (a wildcard counts for more than a single host), then reward, then roughly how saturated the program probably is. I made it additive on purpose so one weak signal can't zero out an otherwise great target, which is what kept happening back when I tried multiplying everything together.
 
-## The part I reach for most
-
-For the watchlist programs, the ones I'm actually authorised to test, bounty-watch also probes a short list of commonly locked-down paths on the in-scope hosts, stuff like `/admin` or `/.git/config`, and anywhere one comes back 401 or 403 it tries the usual bypass tricks (trailing slashes, path oddities, a pile of X-Forwarded headers, method swaps) and reports anything that suddenly returns a real response. Every hit gets snapshotted, hashed and timestamped, so even if the endpoint gets re-locked later I've still got the evidence, and it notices and dates the re-lock on its own. It only ever touches watchlist in-scope hosts, and the whole feature can be switched off with an env var. These are candidate bypasses to verify by hand, not confirmed findings, and the detector is deliberately strict to keep the false positives down.
-
 ## What I'd tell you if you built the same thing
 
 Keep it dependency-free if you can. The whole script is standard-library Python, no pip install, which means the Action has basically nothing to break and the thing will probably still be running in two years without me touching it.
